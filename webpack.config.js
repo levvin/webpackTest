@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack = require('webpack');
 //自动打包html文件插件
 const htmlWebpackPlugin = require('html-webpack-plugin');
 //自动清除dist打包目录及其目录下的所有文件
@@ -24,7 +25,11 @@ module.exports = {
 		// 服务器运行端口
 		port: 9527,
 		// 是否自动打开浏览器
-		open: true
+		open: true,
+		// 启用模块热更新
+		hot: true,
+		// 模块热更新失败时，重新刷新浏览器
+		hotOnly: true
 	},
 
 	// 资源转换打包
@@ -76,7 +81,10 @@ module.exports = {
 		}),
 
 		//自动清除上一次打包的文件
-		new cleanWebpackPlugin()
+		new cleanWebpackPlugin(),
+
+		// 模块热更新HMR
+		new webpack.HotModuleReplacementPlugin()
 	]
 
 }
