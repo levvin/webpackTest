@@ -4,8 +4,8 @@
   "description": "learn webapck ",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server",
-    "dist": "webpack",
+    "dev": "webpack-dev-server --config ./build/webpack.dev.js",
+    "dist": "webpack --config ./build/webpack.prod.js",
     "watch": "webpack --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -30,6 +30,11 @@
     "url-loader": "^1.1.2",
     "webpack": "^4.32.2",
     "webpack-cli": "^3.3.2",
-    "webpack-dev-server": "^3.4.1"
-  }
+    "webpack-dev-server": "^3.4.1",
+    "webpack-merge": "^4.2.1"
+  },
+  "sideEffects": [
+    "*.css",
+    "@babel/polyfill"
+  ]
 }

@@ -1,36 +1,20 @@
+//webpack 公用配置文件
+
 const path = require('path');
-const webpack = require('webpack');
 //自动打包html文件插件
 const htmlWebpackPlugin = require('html-webpack-plugin');
 //自动清除dist打包目录及其目录下的所有文件
 const cleanWebpackPlugin = require('clean-webpack-plugin');
-module.exports = {
 
-	// 环境
-	mode: "development",
+module.exports = {
 
 	// 入口
 	entry: './src/index.js',
 
 	// 出口
 	output: {
-		filename:'main.js',
-		path: path.resolve( __dirname, 'dist')
-	},
-  // sourceMap
-  devtool:'none',
-	// 自动打包设置
-	devServer: {
-		// 以dist文件为基础启动一个服务器，
-		contentBase: 'dist',
-		// 服务器运行端口
-		port: 9527,
-		// 是否自动打开浏览器
-		open: true,
-		// 启用模块热更新
-		hot: true,
-		// 模块热更新失败时，重新刷新浏览器
-		hotOnly: true
+		filename:'[name].js',
+		path: path.resolve( __dirname, '../dist')
 	},
 
 	// 资源转换打包
@@ -85,14 +69,12 @@ module.exports = {
 	
 		//自动打包html文件插件
 		new htmlWebpackPlugin({
-			template: 'src/index.html'
+			template: 'index.html'
 		}),
 
 		//自动清除上一次打包的文件
 		new cleanWebpackPlugin(),
 
-		// 模块热更新HMR
-		new webpack.HotModuleReplacementPlugin()
 	]
 
 }

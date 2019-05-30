@@ -1,10 +1,5 @@
+import {add} from './math';
 
-const arr = [
-	new Promise(() => {}),
-	new Promise(() => {}),
-	new Promise(() => {})
-]
+add(300,250);
 
-arr.map(item => {
-	console.log(item);
-})
+console.log('webpack here')
