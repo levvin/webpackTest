@@ -1,0 +1,26 @@
+{
+  "name": "mywebpack",
+  "version": "1.0.0",
+  "description": "learn webapck ",
+  "main": "index.js",
+  "scripts": {
+    "dist": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "webpack"
+  ],
+  "author": "le",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.5.1",
+    "css-loader": "^2.1.1",
+    "node-sass": "^4.12.0",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.32.2",
+    "webpack-cli": "^3.3.2"
+  }
+}
