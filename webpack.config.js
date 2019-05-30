@@ -17,7 +17,8 @@ module.exports = {
 		filename:'main.js',
 		path: path.resolve( __dirname, 'dist')
 	},
-
+  // sourceMap
+  devtool:'none',
 	// 自动打包设置
 	devServer: {
 		// 以dist文件为基础启动一个服务器，
@@ -35,7 +36,14 @@ module.exports = {
 	// 资源转换打包
 	module: {
 		rules: [
-
+			// ES6传ES5
+			{
+				test: /\.js$/,
+				exclude: /node_modules/, // 不处理node_modules里的文件
+				use: {
+					loader: 'babel-loader'
+				}
+			},
 			// url-loader 图片等资源文件打包
 			{
 				test: /\.(png|jpg|gif)$/i,
