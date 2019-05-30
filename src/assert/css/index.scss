@@ -1,13 +1,7 @@
-body{
-	background: #ccc;
-	#root{
-		width: 500px;
-		height: 500px;
-		background: #fff;
-		.myimg{
+
+
+.myimg{
 			width: 200px;
-			height: 150px;
+			height: 200px;
 			transform: translate(50px,50px);
-		}
-	}
 }

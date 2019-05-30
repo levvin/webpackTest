@@ -22,17 +22,27 @@ module.exports = {
 					}
 				}
 			},
-			//css　样式文件打包
+			//css　css-loader style-loader样式文件打包
 			{
-				test: /\.css$/i,
-				use: ['style-loader','css-loader']				
-			},
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader']
+      },
 			//sass-loder sass/scss样式文件打包 
 			//postcss-loader 自动添加厂商前缀
-			{				
-				test: /\.(sass|scss)$/,
-				use: ['style-loader','css-loader','sass-loader','postcss-loader']
-			}
+			{
+        test: /\.(sass|scss)$/,
+        use: [
+          'style-loader', 
+          {
+          	loader: 'css-loader',
+          	options: {
+            	modules: true
+          	}
+        	}, 
+        	'sass-loader', 
+        	'postcss-loader'
+        	]
+      }
 		]
 	}
 }

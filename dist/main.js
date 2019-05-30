@@ -86,14 +86,25 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js!./node_modules/postcss-loader/src/index.js!./src/assert/css/index.scss":
-/*!****************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js!./node_modules/postcss-loader/src!./src/assert/css/index.scss ***!
-  \****************************************************************************************************************************************************/
+/***/ "./node_modules/css-loader/dist/cjs.js!./src/index.css":
+/*!*************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/index.css ***!
+  \*************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \"body {\\n  background: #ccc; }\\n  body #root {\\n    width: 500px;\\n    height: 500px;\\n    background: #fff; }\\n    body #root .myimg {\\n      width: 200px;\\n      height: 150px;\\n      -webkit-transform: translate(50px, 50px);\\n      transform: translate(50px, 50px); }\\n\", \"\"]);\n\n\n\n//# sourceURL=webpack:///./src/assert/css/index.scss?./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js!./node_modules/postcss-loader/src");
+eval("exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \".woimg{\\r\\n\\twidth: 400px;\\r\\n\\theight: 400px;\\r\\n}\", \"\"]);\n\n\n\n//# sourceURL=webpack:///./src/index.css?./node_modules/css-loader/dist/cjs.js");
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/sass-loader/lib/loader.js!./node_modules/postcss-loader/src/index.js!./src/assert/css/index.scss":
+/*!**************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/sass-loader/lib/loader.js!./node_modules/postcss-loader/src!./src/assert/css/index.scss ***!
+  \**************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \".vHKwyW1OFX2Ops_nG-nQ6 {\\n  width: 200px;\\n  height: 200px;\\n  -webkit-transform: translate(50px, 50px);\\n  transform: translate(50px, 50px); }\\n\", \"\"]);\n\n// Exports\nexports.locals = {\n\t\"myimg\": \"vHKwyW1OFX2Ops_nG-nQ6\"\n};\n\n//# sourceURL=webpack:///./src/assert/css/index.scss?./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/sass-loader/lib/loader.js!./node_modules/postcss-loader/src");
 
 /***/ }),
 
@@ -138,7 +149,7 @@ eval("\n/**\n * When source maps are enabled, `style-loader` uses a link element
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("\nvar content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/lib/loader.js!../../../node_modules/postcss-loader/src!./index.scss */ \"./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js!./node_modules/postcss-loader/src/index.js!./src/assert/css/index.scss\");\n\nif(typeof content === 'string') content = [[module.i, content, '']];\n\nvar transform;\nvar insertInto;\n\n\n\nvar options = {\"hmr\":true}\n\noptions.transform = transform\noptions.insertInto = undefined;\n\nvar update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ \"./node_modules/style-loader/lib/addStyles.js\")(content, options);\n\nif(content.locals) module.exports = content.locals;\n\nif(false) {}\n\n//# sourceURL=webpack:///./src/assert/css/index.scss?");
+eval("\nvar content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--6-1!../../../node_modules/sass-loader/lib/loader.js!../../../node_modules/postcss-loader/src!./index.scss */ \"./node_modules/css-loader/dist/cjs.js?!./node_modules/sass-loader/lib/loader.js!./node_modules/postcss-loader/src/index.js!./src/assert/css/index.scss\");\n\nif(typeof content === 'string') content = [[module.i, content, '']];\n\nvar transform;\nvar insertInto;\n\n\n\nvar options = {\"hmr\":true}\n\noptions.transform = transform\noptions.insertInto = undefined;\n\nvar update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ \"./node_modules/style-loader/lib/addStyles.js\")(content, options);\n\nif(content.locals) module.exports = content.locals;\n\nif(false) {}\n\n//# sourceURL=webpack:///./src/assert/css/index.scss?");
 
 /***/ }),
 
@@ -153,6 +164,29 @@ eval("module.exports = \"data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAAAAAAAD/2wBD
 
 /***/ }),
 
+/***/ "./src/components/cssmodule.js":
+/*!*************************************!*\
+  !*** ./src/components/cssmodule.js ***!
+  \*************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return Cssmodule; });\n/* harmony import */ var _assert_img_th2_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../assert/img/th2.jpg */ \"./src/assert/img/th2.jpg\");\n/* harmony import */ var _assert_img_th2_jpg__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_assert_img_th2_jpg__WEBPACK_IMPORTED_MODULE_0__);\n\r\n\r\nfunction Cssmodule(){\r\n\r\n\tlet img = new Image();\r\n\timg.src = _assert_img_th2_jpg__WEBPACK_IMPORTED_MODULE_0___default.a;\r\n\timg.classList.add('woimg');\r\n\r\n\tvar root = document.getElementById(\"root\");\r\n\troot.appendChild(img);\r\n}\n\n//# sourceURL=webpack:///./src/components/cssmodule.js?");
+
+/***/ }),
+
+/***/ "./src/index.css":
+/*!***********************!*\
+  !*** ./src/index.css ***!
+  \***********************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("\nvar content = __webpack_require__(/*! !../node_modules/css-loader/dist/cjs.js!./index.css */ \"./node_modules/css-loader/dist/cjs.js!./src/index.css\");\n\nif(typeof content === 'string') content = [[module.i, content, '']];\n\nvar transform;\nvar insertInto;\n\n\n\nvar options = {\"hmr\":true}\n\noptions.transform = transform\noptions.insertInto = undefined;\n\nvar update = __webpack_require__(/*! ../node_modules/style-loader/lib/addStyles.js */ \"./node_modules/style-loader/lib/addStyles.js\")(content, options);\n\nif(content.locals) module.exports = content.locals;\n\nif(false) {}\n\n//# sourceURL=webpack:///./src/index.css?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
@@ -161,7 +195,7 @@ eval("module.exports = \"data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAAAAAAAD/2wBD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _assert_img_th2_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./assert/img/th2.jpg */ \"./src/assert/img/th2.jpg\");\n/* harmony import */ var _assert_img_th2_jpg__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_assert_img_th2_jpg__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _assert_css_index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./assert/css/index.scss */ \"./src/assert/css/index.scss\");\n/* harmony import */ var _assert_css_index_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_assert_css_index_scss__WEBPACK_IMPORTED_MODULE_1__);\n\r\n\r\n\r\nlet root = document.getElementById('root');\r\n\r\nlet img = new Image();\r\nimg.src = _assert_img_th2_jpg__WEBPACK_IMPORTED_MODULE_0___default.a;\r\nimg.classList.add('myimg');\r\nroot.appendChild(img);\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _assert_img_th2_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./assert/img/th2.jpg */ \"./src/assert/img/th2.jpg\");\n/* harmony import */ var _assert_img_th2_jpg__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_assert_img_th2_jpg__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _components_cssmodule_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/cssmodule.js */ \"./src/components/cssmodule.js\");\n/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./index.css */ \"./src/index.css\");\n/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_index_css__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _assert_css_index_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./assert/css/index.scss */ \"./src/assert/css/index.scss\");\n/* harmony import */ var _assert_css_index_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_assert_css_index_scss__WEBPACK_IMPORTED_MODULE_3__);\n\r\n\r\n\r\n\r\n//css模块化引入\r\n\r\n\r\n\r\nObject(_components_cssmodule_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\r\n\r\n\r\nlet img = new Image();\r\nimg.src = _assert_img_th2_jpg__WEBPACK_IMPORTED_MODULE_0___default.a;\r\n//css 模块化打包\r\nimg.classList.add(_assert_css_index_scss__WEBPACK_IMPORTED_MODULE_3___default.a['myimg']);\r\n\r\nlet root = document.getElementById('root');\r\nroot.appendChild(img);\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ })
 
